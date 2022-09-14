@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: hsl(233, 47%, 7%) ;
+width: 100vw;
+height: 100vh;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+flex-direction: column;
+
+}
+
+.container{
+    display: flex;
+    width:1000px ;
+    border-radius: 5px;
+    background-color:hsl(244, 38%, 16%) ;
+    height: 433px;
+}
+.headings{
+    width: 70%;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding: 40px 0px 40px 80px;
+    
+}
+.headings p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    height: 100px;
+}
+.stat{
+    display: flex;
+    
+}
+
+.companies , .queries , .templates{
+    padding-right: 40px;
+}
+.stat p{
+    color:hsla(0, 0%, 100%, 0.6) ; 
+    font-size: 15px;
+    font-weight: 400;
+}
+span{
+    color:hsl(277, 64%, 61%) ;
+}
+
+h1{
+    color: hsl(0, 0%, 100%) ;
+    font-weight: 700;
+}
+h2{
+    color: hsl(0, 0%, 100%) ;
+    font-weight: 700;
+}
+
+section{
+    height: 100%;
+    width: 50%;
+    background: url(image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.image{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  hsla(277, 64%, 61% );
+    opacity: 0.6;
+}
+.attribution { font-size: 11px; text-align: center; color: white; margin-top: 50px; }
+.attribution a { color: hsl(300, 62%, 42%); }
+
+@media(max-width:700px){
+
+    .body{
+        height: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 80vw;
+        height: 80vh;
+        border-radius: 20px;
+        
+    }
+    .headings{
+        width: 100%;
+    }
+
+    .text{
+        text-align: center;
+        display: flex;
+        flex: 2;
+        padding: 30px 30px 0px 30px ;
+        height:80%;
+
+    }
+    h1{
+        font-size: 1.5em;
+    }
+     .headings p{
+        font-size: 1em;
+    }
+    .stat p{
+        font-size: 1em;
+    }
+    
+    .stat{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    .companies, .queries, .templates{
+        padding: 10px;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        flex: 1;
+        background: url(image-header-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 10px 10px 0px 0px
+    }
+    
+    .image{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        border-radius: 10px 10px 0px 0px;
+        height: 100%;
+        background:  hsla(277, 64%, 61% );
+        opacity: 0.6;
+    }
+}
